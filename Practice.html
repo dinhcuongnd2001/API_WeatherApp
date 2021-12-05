@@ -4,24 +4,39 @@
         <title>PracticeWithHTML</title>
         <meta  charset="utf-8">
         <link rel="stylesheet" href="main.css">
+
+        <style>
+            div>h2.DN{
+                color :var(--text_Color);
+                font-size: 30px;
+            }
+            .box{
+                width: 50vw;
+                height: 50vh;
+                background-color: var(--text_Color);
+            }
+        </style>
     </head>
 
     <body>
         <h1>Thông tin cá nhân</h1>
-        <div>
-            <h2>
+        <div class="form">
+            <h2 class="DN">
                 Đăng Nhập
             </h2>
-            Tên     Đăng Nhập<input type="text">
+            Tên Đăng Nhập<input type="text">
             Mật Khẩu<input type="password">
             <button>Đăng Nhập</button>
         </div>
 
-        <div>
-            <!-- cùng name ="gemder" thì chỉ chọn được 1-->
+        <div class="Gender">
+            <!--cùng name ="gender" thì chỉ chọn được 1-->
             Nam<input name="gender" type="radio">
             Nữ<input name = "gender" type="radio"> 
             Khác<input name="gender" type="radio">  
+            <p class="paragraph1">dong nay de test tinh nang</p>
+            <p class="paragraph2">dong nay de test tinh nang</p>
+            <p class="paragraph3">dong nay de test tinh nang</p>
         </div>
 
         <div>
@@ -78,5 +93,7 @@
                 </tbody>
             </table>
         </div>
+        <div class="box"></div>
     </body>
+
 </html>

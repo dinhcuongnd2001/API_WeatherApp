@@ -7,3 +7,28 @@ h1 {
     color: red;
     font-size: 40px;
 }
+
+div.form{
+    color:red;
+    font-size: 30px;
+}
+
+div.Gender{
+    color: var(--text_Color);
+    font-size: 30px;
+}
+
+div>p.paragraph1{
+    /* my coler is a local variable */
+    --my_color : violet;
+    color:var(--my_color);
+    font-size: 50px;
+}
+
+
+:root{
+    /* golbal variable  
+        this variable in here can access in every where in css and file HTML
+    */
+    --text_Color: orange;
+}
