@@ -10,10 +10,8 @@
                 color :var(--text_Color);
                 font-size: 30px;
             }
-            .box{
-                width: 50vw;
-                height: 50vh;
-                background-color: var(--text_Color);
+            a::after{
+             content: " (" attr(href) ")";   
             }
         </style>
     </head>
@@ -93,7 +91,6 @@
                 </tbody>
             </table>
         </div>
-        <div class="box"></div>
+        <div class="box" data-titel = "Đây là cái box màu xanh"></div>
     </body>
-
 </html>

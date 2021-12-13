@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>  
+    <head>
+        <style>
+            h1:hover {
+                /* nhung thuoc tinh duoc khai bao trong hover chi hien thi khi ma di chuot toi  */
+                color: red;
+            }
+            .box{
+                background-color: yellow;
+                width: 50vw;
+                height: 50vh;
+                text-align: center;
+            }
+            .box::after{
+                content: attr(data-titel);
+            }
+            .box:hover{
+                background: yellowgreen;
+            }
+            #a2::after{
+                content: " ("  attr(href)  ")";
+            }
+            #a2:active{
+                /* day la lop gia, cac thuoc tinh trong lop nay se duoc display khi kich chuat vao */
+                color: red;
+                font-size: 30px;
+            }
+            ul{
+                color: orange;
+                font-size: 30px;
+            }          
+            li:first-child{
+                /* lay ra phan tu dau cua ds */  
+                color: yellowgreen;
+                font-size: 25px;
+            }
+            li:last-child{
+                color: red;
+                font-size: 30px;
+            }
+            /* first child va last child la 2 lop gia dung de lay cac phan tu dau, cuoi thuoc mot lop con
+               hay dung cho cac menu */
+
+        </style>
+    </head>
+    
+    <body>  
+        <div>
+            <h1 >this is a test line1</h1>
+            <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">link to access the lesson</a>
+        </div>
+        
+        <div class="box" data-titel="this is a box">custom the box </div>
+        <div>
+            <a id="a2" href="https://www.facebook.com/dnc.cuong">let's contact with me</a>
+            
+        </div>
+        <div>
+            <ul>
+                <!-- ul la tao ra list voi cac muc
+                     ol la tao ra list theo thu tu tu 1 -> n -->
+                <li>line 1</li>
+                <li>line 2</li>
+                <li>line 3</li>
+                <li>line 4</li>
+                <li>line 5</li>
+            </ul>
+        </div>
+    </body>
+</html>

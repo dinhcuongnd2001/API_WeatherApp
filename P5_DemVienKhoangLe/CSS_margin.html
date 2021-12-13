@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- margin -->
+<!-- khong lam tang kich thuoc cua cac the len -->
+<html>
+    <head>
+        <style>
+            .box{
+                width: 120px;
+                height: 120px;
+                color: white;
+                /*dung de can chinh chu ra giua box*/
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* don tat ca cac element ve 1 phia ben trai (chuyen cac elements ve 1 ham) */
+                float: left;
+            }
+            .box1{
+                background-color: brown;
+                margin: 20px;
+                padding:10px;
+                border: 1px solid black;
+            }
+            .box2{
+                background-color: black;
+                padding: 10px;
+                border: 1px solid white;
+                margin: 20px;
+
+            }
+            .box3{
+                background-color: rgb(209, 143, 21);
+                padding: 10px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: black;
+                /*lam cho the cach ben tren 10px*/
+                margin-top: 20px;
+                /*su dung so padding, lam cach deu cac huong: margin: 10px*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </body>
+</html>

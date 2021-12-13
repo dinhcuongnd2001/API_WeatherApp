@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- tao ra cac phan tu gia hien thi bang CSS ma khong can dung den HTML  -->
+        <style>
+            .box{
+                width: 100vw;
+                height: 30vh;
+                background: violet;
+            }
+            a{
+                font-size: 30px;
+                color: brown;
+                margin-left: 45vw;
+            }
+            a:hover{
+                color: red;
+            }
+            /* ::before : tao ra 1 element dung dau trong the do */
+            .box::before{
+                content: "";
+                width: 80px;
+                height: 80px;
+                display: block;
+                background: yellow;
+            }
+            /* ::after: tao ra 1 elemet dung cuoi trong the do */
+            .box::after{
+                content: "";
+                width: 80px;
+                height: 80px;
+                background: red;
+                display: block;
+            }
+            /* :: first-letter: style the firts letter */
+            h1::first-letter{
+                font-size: 50px;
+                /* color: red; */
+                text-transform: uppercase;
+            }
+            h1{
+                color: yellowgreen;
+                font-size: 25px;
+            }
+            h1:hover{
+                color: tomato;
+            }
+            /* :: first -line : style only the first line
+                note: neu ma co mot tu trong dong dau bi dau xuong dong tiep thi van chi style dong 1
+                ko quan tam den tu bi day xuong */
+            h1::first-line{
+                font-size: 30px;
+                color: red;
+            }
+
+            /* selection: khi ma dung chuot de boi (den) thi se hien thi ra mau custom
+            neu de la ::selection thi no se ap dung cho ca trang day*/
+            li::selection{
+                background-color: brown;
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="box">
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <a href="https://www.w3schools.com/css/css_pseudo_elements.asp">CSS Pseudo-Elements</a>
+        <h1>this is a test line <br> let's pratice with it </h1>
+        <div>
+            <ul style="font-size: 25px;">
+                <li>::before</li>
+                <li>::after</li>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+                <li>::selection</li>
+                <li>::...</li>
+            </ul>
+        </div>
+    </body>
+</html>

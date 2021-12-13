@@ -32,3 +32,12 @@ div>p.paragraph1{
     */
     --text_Color: orange;
 }
+
+.box{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(44, 114, 30);
+}
+.box::after{
+    content: attr(data-titel);
+}

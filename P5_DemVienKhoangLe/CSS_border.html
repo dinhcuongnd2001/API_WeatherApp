@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- border la vien -->
+<html>
+    <head>
+        <style>
+            .box{
+                width: 120px;
+                height: 120px;
+                color: white;
+                /*dung de can chinh chu ra giua box*/
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .box1{
+                background-color: brown;
+            }
+            .box2{
+                background-color: black;
+            }
+            .box3{
+                background-color: rgb(209, 143, 21);
+                padding: 10px;
+                /*style for border*/
+                border-width: 1px;
+                /* neu muon style cho 1 box voi 1 thuoc tinh (top, bottom, right, left) thi buoc phai cho cac thuoc tinh khac = 0
+                vi cai thuoc itinh cua border-style: luon mac dinh la  2px*/
+                border-style: solid;
+                /* solid: vien lien
+                   dashed la vien net dut */
+                border-color: black;
+                /* co the gop 3 thuoc tinh width, style, color thanh 1 dong
+                    ex:
+                    border: 1px solid black; */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </body>
+</html>
