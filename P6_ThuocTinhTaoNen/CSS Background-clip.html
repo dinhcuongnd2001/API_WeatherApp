@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background-Clip</title>
+        <style>
+            .header{
+                width: 100%;
+                height: 100px;
+                background-color: #333;
+                padding: 20px;
+                box-sizing: border-box;
+                border: 10px dashed red;
+                background-clip: content-box;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Background-Clip se xac dinh xem background duoc do tu dau(content, padding, border)</h1>
+        <ul>
+            <li>Mac dinh background se duoc do tu border-box</li>
+            <li>do background tu padding : background-clip: padding-box</li>
+            <li>do background tu content: background-clip: content-box</li>
+        </ul>
+        <div class="header"></div>
+    </body>
+</html>

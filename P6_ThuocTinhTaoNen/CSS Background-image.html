@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CSS Background-image</title>
+        <meta charset="uft-8">
+        <style>
+            .header{
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(0, rgba(185,109,32, 0.5), rgba(204,204,204,0.5)),
+                url(https://cdn.tgdd.vn/Files/2020/07/15/1270840/settopnhacphimmatbiec-15757938-9200-5886-1575794119_1200x0_1200x720-800-resize.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            li{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <ul>
+            <li>Xét kích thước của ảnh theo giá trị value là đang xét theo chiều ngang, chiều dọc mặc định là auto để cho phù hợp với kt gốc: background-size: value.</li>
+            <li>Mặc định là sẽ repeat lại ảnh cho vừa khuân màn hình, để không lặp lại dùng background-repeat: no-repeat.</li>
+            <li>Có thể thêm nhiều ảnh cùng lúc nhưng sẽ hiện thị theo thứ tự thêm.</li>
+            <li>Sử dụng màu trong suốt rgba(;;;).</li>
+            <li>Thuộc tính repeat dùng để lặp lại các ảnh giống nhau để tạo nên background lớn.</li>
+            <li>Sử dùng linear-gradient(value1, value2, value3) để tạo ra giải màu cho background: value1: góc quay(mặc định 180), value2: màu bắt đầu, value3: màu kết thúc</li>
+        </ul>
+        <div class="header"></div>
+    </body>
+</html>
