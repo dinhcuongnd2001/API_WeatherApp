@@ -1,0 +1,45 @@
+/* reset CSS */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Helvetica,Arial,  sans-serif;
+}
+#header{
+    height: 46px;
+    background-color: black;
+}
+#nav li{
+    display: inline-block;
+    
+}
+#nav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+#nav li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 46px;
+    color: #fff;
+    padding: 0px 24px;
+}
+#subnav li{
+    display: none;
+}
+
+#slider{
+
+}
+
+#content{
+
+}
+
+#footer{
+
+}
