@@ -7,33 +7,60 @@
 }
 
 html{
-    font-family: Helvetica,Arial,  sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 #header{
     height: 46px;
     background-color: black;
 }
-#nav li{
-    display: inline-block;
+#nav> li{
+    display: inline-block;  
+    position: relative;
     
 }
-#nav li:hover a{
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li:hover >a,
+#nav .subnav >li:hover >a{
     color: black;
     background-color: #ccc;
 }
-#nav li a{
-    display: inline-block;
+#nav >li {
+    list-style-type: none;
+}
+#nav > li > a {
+    text-transform: uppercase;
+}   
+
+#nav li a {
+    display: block;
     text-decoration: none;
     line-height: 46px;
     color: #fff;
     padding: 0px 24px;
 }
-#subnav li{
+
+#nav .subnav{
+    position: absolute;
+    background-color: #fff;
+    top:100%;
+    left: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
 }
 
-#slider{
+#nav .subnav a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    line-height: 22px;
+    min-width: 160px;
+}
 
+#slider{
+    background-color: black;
+    height: 500px;
 }
 
 #content{
