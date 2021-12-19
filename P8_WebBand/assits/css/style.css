@@ -13,6 +13,10 @@ html{
     height: 46px;
     background-color: black;
 }
+#nav{
+    /* inline-block kich thuoc khoi bang kich thuoc cua chu */
+    display: inline-block;
+}
 #nav> li{
     display: inline-block;  
     position: relative;
@@ -56,6 +60,28 @@ html{
     padding: 8px 16px;
     line-height: 22px;
     min-width: 160px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .search-btn{
+    /* float right: bo qua kich thuoc auto cua block va chuyen ve phai*/
+    float: right;
+    background-color: black;
+    font-size: 15px;
+}
+
+#header .search-btn:hover{
+    background-color:#f44336;
+    /* cursor dung de thay doi hinh dang con tro chuot*/
+    cursor: pointer;
+}
+#header .search-btn .search-icon{
+    color: white;
+    line-height: 46px;
+    padding: 0px 24px;
 }
 
 #slider{
