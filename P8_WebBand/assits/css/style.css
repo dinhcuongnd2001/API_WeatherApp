@@ -10,8 +10,12 @@ html{
     font-family: Helvetica, Arial, sans-serif;
 }
 #header{
+    width: 100%;
     height: 46px;
     background-color: black;
+    position: fixed;
+    top:0px;
+    z-index: 1;
 }
 #nav{
     /* inline-block kich thuoc khoi bang kich thuoc cua chu */
@@ -52,6 +56,7 @@ html{
     left: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
+    list-style: none;
 }
 
 #nav .subnav a{
@@ -63,7 +68,7 @@ html{
 }
 
 #nav .nav-arrow-down{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #header .search-btn{
@@ -85,12 +90,36 @@ html{
 }
 
 #slider{
-    background-color: black;
-    height: 500px;
+    position: relative;
+    background: url("/assits/img/Slider/chicago.jpg") top center / cover no-repeat;    
+    /* background-color: black; */
+    padding-top: 50%;
+    margin-top: 46px;
 }
 
+#slider .slider-info{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+#slider .slider-line{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+#slider .slider-describle{
+    margin-bottom: 48px;
+    font-size: 15px;
+    font-weight: 700;
+}
 #content{
+}
 
+#content .font-content{
+    padding: 64px, 16px;
 }
 
 #footer{
