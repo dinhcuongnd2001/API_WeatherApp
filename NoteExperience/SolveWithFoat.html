@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note1</title>
+    <style>
+        .vid1{
+            margin-top: 45px;
+            text-align: center;
+            overflow: hidden;
+        } 
+        .vid1 .content{
+            float: left;
+            width: 33.333%;
+        }
+        .vid1 .pic{
+            border-radius: 4px;
+            width: 154px;
+        }
+
+        .vd2{
+            margin-top: 145px;
+            text-align: center;
+        } 
+        .vd2 .content{
+            float: left;
+            width: 33.333%;
+        }
+        .vd2 .pic{
+            border-radius: 4px;
+            width: 154px;
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>Khi thuc hien chuyen cac the Div thuoc cung 1 the Div cua lop cha len mot hang. Dung Float:left</li>
+        <li>Lưu ý: thẻ Div chứa các lớp con sẽ bị tách ra khỏi bề mặt khác(bấm F12 rồi kiểm tra)</li>
+        <li>Để khắc phục thì css vào thẻ Div của lớp cha: overflow: hidden</li>
+        <li>Xem 2 ví dụ bên dưới để thấy sự khác biệt(Nêu không có overflow- hidden ở vid1 thì chúng ta sẽ không có được khoảng cách thật của vd2)</li>
+    </ul>
+
+    <div class="vid1">
+        <div class="content">
+            <p class="name">Name</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="this picture has lost" class="pic">
+        </div>
+        <div class="content">
+            <p class="name">Name</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="this picture has lost" class="pic">
+        </div>
+        <div class="content">
+            <p class="name">Name</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="this picture has lost" class="pic">
+        </div>
+    </div>
+
+    <div class="vd2">
+        <div class="content">
+            <p class="name">Name</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="this picture has lost" class="pic">
+        </div>
+        <div class="content">
+            <p class="name">Name</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="this picture has lost" class="pic">
+        </div>
+        <div class="content">
+            <p class="name">Name</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="this picture has lost" class="pic">
+        </div>
+    </div>
+</body>
+</html>

@@ -115,13 +115,62 @@ html{
     font-size: 15px;
     font-weight: 700;
 }
-#content{
+
+
+#content .about-band, .about-tour, .about-contact{
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 46px;
 }
 
-#content .font-content{
-    padding: 64px, 16px;
+#content .heading{
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
+#content .sub-heading{
+    font-size: 15px;
+    line-height: 1.5;
+    font-style: italic;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+#content .sub-describer{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 62px;
+}
+
+#content .member{
+
+}
+#content .name-member{
+    margin-bottom: 15px;
+}
+#content .information{
+    float: left;
+    width: 33.333%;
+    text-align: center;
+}
+#content .pic-member{
+    width: 154px;
+    border-radius: 4px;
+}
+
+#content .about-tour{
+    /* color: #fff; */
+}
+.about-tour .heading{
+
+}
 #footer{
 
 }
