@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mobie, .talet, .PC{
+            font-size: 26px;
+            color: white;
+            background-color: orange;
+            display: block;
+            height: 50vh;
+            width: 100%;
+            line-height: 50vh;
+            text-align: center;
+            float: left;
+        }
+        .mobie, .talet, .PC{
+            display: none;
+        }
+        /* Mobie: width < 740px */
+        @media only screen and (max-width: 46.1875em){
+            .mobie{
+                display: block;
+            }
+        }
+        /* Tablet: width >= 740px and width < 1024px*/
+        @media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+            .talet{
+                display: block;
+            }
+        }
+        /* pc: width >= 1024px */
+        @media only screen and (min-width: 64em){
+            .PC{
+                display: block;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>BreakPoint là những điểm/vị trí mà bố cúc website sẽ thay đổi - thích ứng để tạo nên giao diện responsive</h1>
+        <h1>Đơn vị chuẩn để tính BreakPoint thì mên đối px sang rem.</h1>
+        <a href="https://zellwk.com/blog/media-query-units/">Tham khảo bài viết tạo sao dùng em ở đây</a>
+        <a href="https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/">List danh sách chia BreakPoint</a>
+    </div>
+    <h2 class="mobie">Mobie</h2>
+    <h2 class="talet">Talet</h2>
+    <h2 class="PC">PC</h2>
+</body>
+</html>
