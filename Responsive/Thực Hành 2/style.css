@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.main {
+    width: 1200px;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background-color: #333;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 48px;
+}
+
+.nav__mobie{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    list-style: none;
+    width: 320px;
+    max-width: 100%;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+}
+
+.nav_mobie_close{
+    width: 28px;
+    height: 28px;
+    position:absolute;
+    top: 0.4rem;
+    right:1rem;
+}
+
+.nav__mobie-list{
+    margin-top: 24px;
+}
+
+.nav__mobie-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 8px;
+}
+
+.nav_input:checked ~ .nav__overlay{
+    display: block;
+}
+.nav_input:checked ~ .nav__mobie{
+    transform: translateX(0%);
+}
+
+/* Article */
+h1 {
+    line-height: 2rem;
+}
+
+article {
+    padding: 0 16px;
+    line-height: 1.6rem;
+}
+
+article img {
+    width: 640px;
+    max-width: 100%;
+    display: block;
+    margin: 32px auto;
+}
+
+/* mobie nav */
+.nav_bar_btn{
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    display: none;
+    margin-left: 8px;
+}
+
+@media (max-width:1023px){
+    .nav_bar_btn{
+        display: block;
+    }
+    .nav__pc{
+        display: none;
+    }
+}
+
+.nav__overlay{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.3);
+    display: none;    
+    animation: fadeIn linear 0.2s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
