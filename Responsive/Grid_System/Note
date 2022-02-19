@@ -1,0 +1,43 @@
+Grid_System (Hệ thống lưới)
+1.Xuẩt hiện từ đầu thế kỷ thứ XX trong phong trào (Constructivism) nghệ thuật/ kiến trúc
+2. Tạo nên các khung nền, hỗ trợ việc sắp xếp bố cục theo trật tự/ thống nhất cân bằng.
+3.Hệ thống lưới thường gặp:
+    - Lưới nhiều cột (multicolumn grid)
+    - Lưới một cột (Single column grid)
+    - Lưới Module (Modele grid)
+    - Lưới đường cơ sở (Baseline grid)
+4. Vai trò
+    - Tố chức: Có các đường căn gióng tiện lợi, dễ dàng sắp xếp các thành phần được ngăn lắp.
+    - Cân Bằng: Dù là đối xứng / bất đối xứng, mang lại cái nhìn trực quan, đảm bảo sự cân bằng.
+    - Tách biệt thành phần: Phân chia nội dung, tạo khoảng cách các thành phần hiệu quả.
+5. Ứng Dụng:
+    - Lưới được thiết kế theo kiểu Ui/ Ux: vai trò quan trọng trong Responsive Web Design
+    - Lưới trong in ấn: 
+6. Responsive web design
+    - Grid: Thành phần cha
+    - Row: Dòng
+    - Column: Cột ( Column Parent – Column Child )
+    - Gutter: Khoảng cách 2 phía của cột
+
+7.Thành phần chính (lý thuyết)
+    1. Column - Cột
+        Độ rộng sử dụng đơn vị % (tương đối) giúp linh động, dễ dàng tương thích với độ rộng khác nhau của các thiết bị. 
+        Số lượng cột trong grid system được xác định trước. (VD: PC 12|16 cột, tablet 8 cột, mobile 4 cột)
+    2. Gutter - Đường ngăn cách (rãnh ngăn)
+        Là khoảng cách 2 phía của 1 cột, tạo nên rănh ngăn giữa các cột. 
+        Độ rộng rãnh ngăn có thể thay đổi cho phù hợp với thiết kế hoặc độ rộng màn hình (VD: PC/Tablet 24px, mobile 16p)
+    3. Margin - Phần lề
+        Là khoảng cách 2 bên trái/phải của bố cục chính của website. Độ rộng phần lề thay đối để phù hợp với các kích thước màn hình. 
+        VD: Phần lề lớn thích hợp cho màn hình lớn như PC, phần lề nhỏ thích hợp cho màn hình nhỏ như Tablet, mobile
+
+8. Thành phần chính (làm việc với CSS)
+    1. Grid - Lưới (Thường là phần cha, chứa Row và Column)
+    2. Row - Dòng (Dòng - chiều ngang, chứa Column)
+        Vai trò:
+        1. Chứa các columns, giúp các column nằm theo chiều ngang.
+        2. Khi tổng chiều ngang column
+    3. Column - Cột (chứa nội dung / thành phần trên website)
+//
+UI: User Interface: giao diện người dùng
+UX: User Experience: Trải nghiệm người dùng
+//
