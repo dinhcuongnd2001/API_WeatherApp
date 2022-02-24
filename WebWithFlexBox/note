@@ -1,11 +1,16 @@
 display: flex | inline-flex
 flex-direction: row | column
+    flex-direction: row (default: truc "Main Axis" nam theo chieu doc)
 flex-wrap: nowrap | wrap | wrap-reverse
-flex-basis: <length>
+flex-basis: <length> : length of flex-item
 justify-content: flex-start | flex-end | center | space-between | space-around
 justify-self: flex-start | flex-end | center
 align-content: flex-start | flex-end | center
 align-self: flex-start | flex-end | center
 flex-grow: <number>
 flex-shrink: <number>
-flex: <number>
+flex: <number> =>> : là short-hand: flex-grow
+                                    flex-shrink
+                                    flex-basis
+order: x với x là sô thứ tự của flex-item trong flex-container;
+link to check property of flex: https://codepen.io/enxaneta/full/adLPwv/
