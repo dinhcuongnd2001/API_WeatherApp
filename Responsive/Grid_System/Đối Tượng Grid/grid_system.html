@@ -8,28 +8,85 @@
     <!-- my library -->
     <link rel="stylesheet" href="./grid.css">
     <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
         body{
             margin: 0;
         }
-
-        h1{
-            font-size: 100px;   
-            padding: 100px 0;
-            color: #fff;
-            margin: 0;
-        }   
-        
-        .container{
+        .course-item{
             background-color: orange;
-            margin: 0 auto;
+            height: 260px;
+        }
+        h1{
+            line-height: 260px;
             text-align: center;
+            color: #FFF;
+            margin: 0;
+        }
+        @media (max-width: 1023px){
+            h1{
+                margin-top: 16px;
+            }
+        }
+        .category{
+            background-color: green;
+            height: 260px;
+            font-size: 24px;
+        }
+        ul{
+            margin-top: 0;
+        }
+        .name{
+            margin-top: 16px;
         }
 
     </style>
 </head>
 <body>
-    <div class="grid container wide">
-        <h1>grid system</h1>
+    <div class="grid wide">
+        <div class="row">
+            <div class="col l-3 m-0 c-0">
+                <div class="category">
+                    <ul>
+                        <li class="name">HTML,CSS</li>
+                        <li class="name">Javascript</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="list-sub col l-9 m-12 c-12">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+        
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>course 2</h1>
+                        </div>
+                    </div>
+        
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>course 3</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="col l-3 m-4 c-12">
+                <div class="course-item">
+                    <h1>course 4</h1>
+                </div>
+            </div> -->
+
+        </div>
     </div>
 </body>
 </html>
