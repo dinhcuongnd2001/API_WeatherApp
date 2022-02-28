@@ -1,4 +1,28 @@
-1. Tai sao phai dung BEM:
+1.BEM la gi:
+    la tieu chuan dat ten Class khi viet CSS
+2. Tai sao phai dung BEM:
     Khi lam mot du an lon theo team thi moi nguoi dat class mot ten 
     member dat class trung nhau co the gay sai code, CSS de len nhau.
-2. Cu phap:
+3. Y nghia:
+    viet tat cua Block Element Modifier
+    Block: khoi
+    Elemet: thanh phan trong khoi
+    Modified: bo sung y nghia cho "Block" hoac "Khoi"
+4. Cu phap:
+    .block
+    .block__element
+    .block--modifier
+    .block__element--modifier
+5. Ung Dung:
+    xay dung layout web size
+    xay dung thanh phan tren web size
+6. Uu Diem:
+    Tinh ro rang
+    Giup ca team lam viec voi nhau de dang
+    Tinh Module, khong lo CSS cua class nay anh huong len CSS cua class khac
+7. Nhuoc Diem:
+    Ten Class dai
+    Mot so nguoi cho la xau
+8. Khi nao dung BEM la phu hop:
+    Du an nhieu Members
+    Du an lon
